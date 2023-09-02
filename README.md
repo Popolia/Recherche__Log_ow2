@@ -1,4 +1,4 @@
-# OW2Tools1
+# OW2Tools1(Log)
  OW2Tools1(Log)
 
 À savoir ! : la plupart des ordinateurs considèrent les fichiers.bat téléchargés sur l'internet comme extrêmement dangereux et vous empêchent de les exécuter. C'est pourquoi il est souvent préférable de créer son propre fichier.bat . Je vous donne le fichier.bat parce que c'est plus rapide, est vous demandez de faire la manip de copier le code est l'enregistrer serait compliquer ou foireuse, mais rien ne vous empêche de le lire si vous avez des doutes. Après tout, c'est normal dans le monde d'aujourd'hui, mais bon, je ne vois aucune utilité, sachant que j'ai consacré du temps pour vous bref.
