@@ -9,11 +9,11 @@ Good to know! Most computers consider .bat files downloaded from the Internet to
 
 ps1: cars je le sens venir , clic gauche sur "Information complémentaire" puis exécuter si ca vous arrive , comme j'ai dit c'est un .bat
 
-     because I can feel it coming, left click on "Additional information" then execute if it happens to you, as I said it's a .bat
+because I can feel it coming, left click on "Additional information" then execute if it happens to you, as I said it's a .bat
 
 ps2: oui  les images vient du Del_registre_singularity6 qui vient d'un de mon projet (https://github.com/Popolia/PaliaTools2-error-os-5-2-3-32-424-)
 
-     yes the images come from Del_registre_singularity6 which comes from one of my projects (ps3: cars je le sens venir , clic gauche sur "Information complémentaire" puis exécuter si ca vous arrive , comme j'ai dit c'est un .bat
+yes the images come from Del_registre_singularity6 which comes from one of my projects (ps3: cars je le sens venir , clic gauche sur "Information complémentaire" puis exécuter si ca vous arrive , comme j'ai dit c'est un .bat
 
 ps4: oui  les images vient du Del_registre_singularity6 qui vient d'un de mon projet (https://github.com/Popolia/PaliaTools2-error-os-5-2-3-32-424-)
 
