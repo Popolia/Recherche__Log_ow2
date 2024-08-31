@@ -1,50 +1,49 @@
 @echo off
+setlocal enabledelayedexpansion
 
-:: Chemin Overwatch
-cd /d "%ProgramFiles(x86)%\Overwatch"
+:: Chemin Overwatch (modifier si nécessaire)
+set "overwatchPath=%ProgramFiles(x86)%\Overwatch"
 
-:: Attendez que le jeu se ferme (peut-être ajoutez un délai plus long si nécessaire)
-echo Recherche de log
-timeout /t 1 /nobreak
-
-:: Vérifiez si Visual Studio Code est installé
-set "codeInstalled=false"
-where code >nul 2>nul
-if %errorlevel%==0 (
-    set "codeInstalled=true"
+:: Vérifier si le dossier Overwatch existe
+if not exist "%overwatchPath%" (
+    echo Le dossier Overwatch n'existe pas.
+    pause
+    exit /b 1
 )
+
+:: Attendre un peu pour s'assurer que le jeu est fermé (ajuster le délai si nécessaire)
+echo Attente de la fermeture du jeu...
+timeout /t 5 /nobreak
 
 :: Déterminez la langue du système
 for /f "tokens=3" %%a in ('reg query "HKLM\SYSTEM\CurrentControlSet\Control\Nls\Language" /v InstallLanguage ^| findstr /i "InstallLanguage"') do (
     set "systemLanguage=%%a"
 )
 
-:: Définissez le dossier de log en fonction de la langue
+:: Définir le dossier de log en fonction de la langue
 if "%systemLanguage%"=="040C" (
-    set "logFolder=C:\Users\Admin\Documents\Overwatch\Logs"  :: Français
+    set "logFolder=%USERPROFILE%\Documents\Overwatch\Logs"  :: Français
 ) else if "%systemLanguage%"=="0409" (
-    set "logFolder=C:\Users\Admin\Documents\Overwatch\Logs"  :: Anglais
+    set "logFolder=%USERPROFILE%\Documents\Overwatch\Logs"  :: Anglais
 ) else (
     echo Langue non prise en charge. No supported language.
     pause
     exit /b 1
 )
 
-:: Ouvrez le dernier fichier Overwatch.log avec Notepad
-setlocal enabledelayedexpansion
-
+:: Rechercher le dernier fichier Overwatch.log
 set "latestLog="
-for /f "delims=" %%f in ('dir /b /od "%logFolder%\Overwatch*.log"') do (
+for /f "delims=" %%f in ('dir /b /od "%logFolder%\Overwatch*.log" 2^>nul') do (
     set "latestLog=%%f"
 )
 
+:: Ouvrir le dernier fichier Overwatch.log avec Notepad si trouvé
 if defined latestLog (
     start notepad.exe "%logFolder%\!latestLog!"
-    echo Le Dernier fichier de journal Overwatch a été trouvé.
-    echo The latest Overwatch log file has been found.
+    echo Le dernier fichier de journal Overwatch a été trouvé : !latestLog!
 ) else (
-    echo Aucun fichier de journal Overwatch n'a été trouvé. No Overwatch log files were found.
-         No Overwatch log files were found. No Overwatch log files were found.
+    echo Aucun fichier de journal Overwatch n'a été trouvé.
 )
 
 endlocal
+pause
