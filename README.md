@@ -12,9 +12,9 @@ Good to know! Most computers consider .bat files downloaded from the Internet to
 ![Capture_decran_2023-09-02_232034](https://github.com/Popolia/OW2Tools1/assets/69745473/13e7fd20-0d38-4965-8ff0-8226f2b40e31)
 
 
-ps1: cars je le sens venir , clic gauche sur "Information complémentaire" puis exécuter si ca vous arrive , comme j'ai dit c'est un .bat
+ps1:  clic gauche sur "Information complémentaire" puis exécuter si ca vous arrive , comme j'ai dit c'est un .bat
 
-because I can feel it coming, left click on "Additional information" then execute if it happens to you, as I said it's a .bat
+ left click on "Additional information" then execute if it happens to you, as I said it's a .bat
 
 ps2: oui  les images vient du Del_registre_singularity6 qui vient d'un de mon projet (https://github.com/Popolia/PaliaTools2-error-os-5-2-3-32-424-)
 
