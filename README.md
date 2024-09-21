@@ -1,6 +1,8 @@
 # Recherche__Log_ow2.bat(Log)
  Recherche__Log_ow2(Log)
 
+Mise à jour, vous avez maintenant un.exe pour l'exécution du script
+
 À savoir ! : la plupart des ordinateurs considèrent les fichiers.bat téléchargés sur l'internet comme extrêmement dangereux et vous empêchent de les exécuter. C'est pourquoi il est souvent préférable de créer son propre fichier.bat . Je vous donne le fichier.bat parce que c'est plus rapide, est vous demandez de faire la manip de copier le code est l'enregistrer serait compliquer ou foireuse, mais rien ne vous empêche de le lire si vous avez des doutes. Après tout, c'est normal dans le monde d'aujourd'hui, mais bon, je ne vois aucune utilité, sachant que j'ai consacré du temps pour vous bref.
 
 Good to know! Most computers consider .bat files downloaded from the Internet to be extremely dangerous and prevent you from running them. That's why it's often better to create your own .bat file. I'm giving you the .bat file because it's quicker, and asking you to copy the code and save it would be complicated or messy, but there's nothing to stop you reading it if you have any doubts. After all, that's normal in today's world, but hey, I don't see any point, knowing that I've spent time to keep you brief.
